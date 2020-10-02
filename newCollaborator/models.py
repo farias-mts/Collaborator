@@ -21,8 +21,7 @@ def new_collaborator(photo, nameCollab, registration, manager, line, job):
     )
     con.commit()
     status = 'o Colaborador %s foi cadastrado' % (nameCollab)
-    return status
-
+    print(status)
 
 try:
     table_collaborator()

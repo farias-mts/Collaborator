@@ -153,3 +153,4 @@ def return_status(status):
         font=('Calibri', '13', 'bold')
     )
     status_label.pack()
+    popup.mainloop()

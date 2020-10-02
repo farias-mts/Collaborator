@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import filedialog
-from .controller import destroy_childrens
+from .controller import destroy_childrens, insert_line
 
 back_color = '#333'
 fore_color = '#ffffff'
