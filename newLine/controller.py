@@ -5,5 +5,7 @@ def destroy_childrens(frame_view):
         children.destroy()
 
 def insert_line(nameLine, abbreviation, typeLine):
+    from .views import return_status
     status = new_line(nameLine, abbreviation, typeLine)
-    print(status)
+    return_status(status)
+    

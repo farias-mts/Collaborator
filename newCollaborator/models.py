@@ -20,8 +20,8 @@ def new_collaborator(photo, nameCollab, registration, manager, line, job):
         VALUES(?,?,?,?,?,?)""", (photo, nameCollab, registration, manager, line, job)
     )
     con.commit()
-    status = 'o Colaborador %s foi cadastrado' % (nameCollab)
-    print(status)
+    status = 'Colaborador(a)\n %s \nfoi cadastrado!' % (nameCollab)
+    return status
 
 try:
     table_collaborator()

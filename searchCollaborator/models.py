@@ -6,6 +6,6 @@ cursor = con.cursor()
 def query_collaborator(query):
     cursor.execute("""
         SELECT * FROM collaborator 
-        WHERE %s""" % (query))
+        %s""" % (query))
     results = cursor.fetchall()
     return results

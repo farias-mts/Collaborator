@@ -145,12 +145,15 @@ def add_photo(event, frame_photo):
 def return_status(status):
     popup = Tk()
     popup.title('STATUS')
-    popup.geometry('150x150')
+    popup.geometry('200x150')
     popup.resizable(False, False)
+    popup.config(bg='#333')
     status_label = Label(
         popup,
         text=status,
-        font=('Calibri', '13', 'bold')
+        font=('Calibri', '13'),
+        bg='#333',
+        fg='#ffffff'
     )
     status_label.pack()
     popup.mainloop()

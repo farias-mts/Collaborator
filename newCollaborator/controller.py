@@ -5,6 +5,10 @@ def destroy_childrens(frame_view):
         children.destroy()
 
 def insert_collab(ifile, nameCollab, registration, manager, line, job):
+    from .views import return_status
     photo = open(ifile.name, 'rb').read()
-    new_collaborator(photo, nameCollab, registration, manager, line, job)
+    status = new_collaborator(photo, nameCollab, registration, manager, line, job)
+    return_status(status)
+
+
 

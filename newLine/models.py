@@ -17,7 +17,7 @@ def new_line(nameLine, abbreviation, typeLine):
     cursor.execute("""
     INSERT INTO line(nome, abrev, tipo)
     VALUES(?,?,?)""", (nameLine, abbreviation, typeLine))
-    status = 'Linha %s inserida' % (nameLine)
+    status = '%s inserida!' % (nameLine)
     con.commit()
     return status
 
